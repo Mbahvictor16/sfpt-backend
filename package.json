@@ -1,0 +1,31 @@
+{
+  "name": "spft-backend",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@inversifyjs/binding-decorators": "^3.0.0",
+    "@inversifyjs/http-core": "^5.6.3",
+    "@inversifyjs/http-hono": "^5.6.3",
+    "@inversifyjs/http-instrumentation-core": "^5.9.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "hono": "^4.13.13",
+    "hono-rate-limiter": "^0.5.4",
+    "inversify": "^8.2.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^1.1.2",
+    "unstorage": "^1.17.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "wrangler": "^4.149.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261012.1": true
+  }
+}
